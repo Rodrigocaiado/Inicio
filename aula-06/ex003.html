@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: #fff;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Ja me livrei da Maldição!</p>
+    
+    <script>
+        // A função prompt sempre devolve a resposta com o valor de string. 
+
+        // Então usa a função Number.parseInt para transformar o valor de string para numero inteiro, lembrando que parseInt é numeros inteiro e não real.
+
+        // Para numeros real, use a função Number.parseFloat.
+
+        // Só Number o javaScript interpreta o valor se é número inteiro ou real.
+
+        var n1 = Number(window.prompt('Digite um número: '));
+        var n2 = Number(window.prompt('Digite outro número: '));
+
+        var s = n1 + n2;
+        window.alert(`A soma entre o número ${n1} e ${n2} é (${s})`);
+    </script>
+</body>
+</html>
